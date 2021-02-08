@@ -1,0 +1,70 @@
+browser:
+  # QQ Browsers
+  - family: QQBrowser
+    regex: MQQBrowser/(\d+(.\d+){0,4})
+  # 欧朋
+  - family: Oupeng
+    regex: Oupeng/(\d+(.\d+){0,4})
+  # Chrome
+  - family: Chrome
+    regex: Chrome/(\d+(.\d+){0,4})
+  - family: Chrome
+    regex: CriOS/(\d+(.\d+){0,4})
+  # 百度
+  - family: Baidu国际
+    regex: bdbrowser_i18n/(\d+(.\d+){0,4})
+  - family: Baidu
+    regex: baidubrowser/(\d+(.\d+){0,4})
+  # UC
+  - family: UC
+    regex: UCBrowser/(\d+(.\d+){0,4})
+  # 火狐
+  - family: Firefox
+    regex: Firefox/(\d+(.\d+){0,4})
+  # 搜狗
+  - family: Sogou
+    regex: SogouMobileBrowser/(\d+(.\d+){0,4})
+  # UC
+  - family: UC
+    regex: UCBrowser/(\d+(.\d+){0,4})
+  # 猎豹
+  - family: LieBao
+    regex: LieBaoFast/(\d+(.\d+){0,4})
+  # Opera
+  - family: Opera
+    regex: Opera/[\w\W]*Version/(\d+(.\d+){0,4})
+  # IE
+  - family: IE
+    regex: Windows NT[\w\W]*rv:(\d+(.\d+){0,4})
+  - family: IE
+    regex: (MSIE)\s(\d+(.\d+){0,4})
+  # Safari
+  - family: Safari
+    regex: Safari/(\d+(.\d+){0,4})
+  # webkit
+  - family: WebKet
+    regex: WebKit/(\d+(.\d+){0,4})
+engine:
+  - family: Webkit
+    regex: WebKit/(\d+(.\d+){0,4})
+  - family: Presto
+    regex: Presto/(\d+(.\d+){0,4})
+os:
+  - family: Android
+    regex: (Android)\s(\d+(\.\d+){0,4})
+  - family: IOS
+    regex: ([i|I][o|O][s|S])\s(\d+(\.\d+){0,4})
+  - family: IOS
+    regex: (iPod|iPod); CPU[\W\w]*OS (\d+(_\d+){0,4})
+  - family: IOS
+    regex: (iPhone|Mac)\sOS\s(\d+(_\d+){0,4})
+  - family: Windows
+    regex: (Windows NT)\s(\d+(_\d+){0,4})
+
+device:
+  - family: IOS
+    regex: ([i|I][o|O][s|S])\s(\d+(\.\d+){0,4})
+  - family: IOS
+    regex: (iPod|iPod); CPU[\W\w]*OS (\d+(_\d+){0,4})
+  - family: default
+    regex: '; ([^;]*)\sBuild\/([^)|^;]*)'
